@@ -6,7 +6,7 @@ const port = 3000;
 const app = express();
 app.use(morgan('dev'));
 
-app.use(express.static(_dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 app.use((req, res) => {
     res.statusCode = 200;
